@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/base-head.html')
+    <script src="scripts/jquery.pagination.js"></script>
+    <script src="scripts/news-list.js?rev=@@hash"></script>
+</head>
+<body>
+@@include('include/header.html')
+<section class="banner-box-min banner-base"></section>
+<section>
+    <div class="container columns-container news-container mb0">
+        <div class="columns-one">
+            <dl class="news-type">
+                <dt>
+                    <b>新闻列表</b>
+                    <span>NEWS LIST</span>
+                </dt>
+                <dd data-value="1">
+                    <div>
+                        <p>企业新闻</p>
+                    </div>
+                </dd>
+                <dd data-value="2">
+                    <div>
+                        <p>行业动态</p>
+                    </div>
+                </dd>
+                <dd data-value="3">
+                    <div>
+                        <p>党支部新闻</p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div class="columns-two">
+            <ul class="news-container-list">
+                <!--<li>
+                    <a href="news-info.html">
+                        <img src="images/pc1.png" alt="">
+                        <div>
+                            <time>2018.12.18</time>
+                            <b>从物联网到智联网 变得不仅仅是名字</b>
+                            <p>时下，人工智能、机器人自动化、拓展现实以及各种互联设备……智能似乎已无处不在。当企业纷纷追逐于这些新一代智能技术的同时，也面临着巨大的基础设施压力一代智能技术的同时，也面临着巨大的基础设施压力一代智能技术的同时，也面临着巨大的基础设施压力 ...</p>
+                        </div>
+                    </a>
+                </li>-->
+            </ul>
+            <div class="pages news-pages"></div>
+        </div>
+    </div>
+</section>
+@@include('include/orther-footer.html')
+</body>
+</html>

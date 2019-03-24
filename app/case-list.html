@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/base-head.html')
+</head>
+<body>
+@@include('include/header.html')
+<section class="banner-box-min banner-case"></section>
+<section>
+    <div class="case-type">
+        <div class="container">
+            <a class="active" tab="1">全部</a>
+            <a tab="2">商业办公</a>
+            <!--<a tab="3">住宅园区</a>-->
+            <a tab="3">公共园区</a>
+        </div>
+    </div>
+    <div class="container case-container">
+        <ul>
+            <li tab="3">
+                <a href="case-ubpa.html">
+                    <img src="images/pc1.png" alt="">
+                    <h1>
+                        <b>上海世博最佳实践区</b>
+                        <span><i class="case1">公共园区</i><i class="case2">管理分散</i></span>
+                    </h1>
+                    <p>城市最佳实践区 （Urban Best Practice Area 简称“UBPA”)位于世博会围栏区的浦西E片区...</p>
+                    <div class="link">查看详情<i class="icon-arrow-blue"></i></div>
+                </a>
+            </li>
+            <li tab="2">
+                <a href="case-gold.html">
+                    <img src="images/pc3.png" alt="">
+                    <h1>
+                        <b>上海金虹桥国际中心</b>
+                        <span><i class="case1">商业办公</i><i class="case2">设备分散</i></span>
+                    </h1>
+                    <p>金虹桥国际中心，地处长宁区轨道交通2号线沿线，位于虹桥商务中心的黄金地段...</p>
+                    <div class="link">查看详情<i class="icon-arrow-blue"></i></div>
+                </a>
+            </li>
+            <li tab="2">
+                <a href="case-pepsi.html">
+                    <img src="images/img_peshi.png" alt="">
+                    <h1>
+                        <b>百事亚洲研发中心</b>
+                        <span><i class="case1">商业办公</i><i class="case2">设备繁多</i></span>
+                    </h1>
+                    <p>百事亚洲研发中心，坐落于上海浦东市郊。是百事集团环球两大研发中心之一...</p>
+                    <div class="link">查看详情<i class="icon-arrow-blue"></i></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <div class="container free-trial trial-box">
+        @@include('include/form.html')
+        <button class="btn-base btn-trial btn-trial-show">免费试用</button>
+    </div>
+</section>
+@@include('include/orther-footer.html')
+</body>
+</html>
+<script>
+    $(function () {
+        $('.case-type').on('click','a',function () {
+            var tab = $(this).attr('tab');
+            for (var i=1;i<4;i++){
+                if (i == tab && tab !==1) {
+                    $('.case-container ul>li').each(function (i,item) {
+                        if ($(item).attr('tab') == tab) {
+                            $(item).css({'display': 'block'});
+                        } else {
+                            $(item).css({'display': 'none'});
+                        }
+                    })
+                }
+                 if(i== tab && tab ==1) {
+                    $('.case-container ul>li').each(function (i,item) {
+                       $(item).css({'display': 'block'});
+                    })
+                }
+            }
+            if ($(this).hasClass('active')){
+                $(this).siblings().removeClass('active');
+            } else {
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+            }
+        })
+    })
+</script>

@@ -1,0 +1,108 @@
+<div class="estimated-price">
+    <h1>预估报价</h1>
+    <p>越详细的数据越能让我们给您提供更合适的方案</p>
+    <ul class="quoted-price-type">
+        <li>
+            <input type="checkbox" name="QuotedPriceType" value="1.19">
+            <label>任务管理</label>
+        </li>
+        <li>
+            <input type="checkbox" name="QuotedPriceType" value="2.43" checked>
+            <label>设备管理</label>
+        </li>
+        <!--<li>
+            <input type="checkbox" name="QuotedPriceType" disabled>
+            <label>租户管理</label>
+        </li>-->
+        <li>
+            <input type="checkbox" name="QuotedPriceType" value="3.88">
+            <label>空间管理</label>
+        </li>
+    </ul>
+    <div class="estimated-price-show">
+        <ul class="pc-show">
+            <li>
+                <span>已选模块</span>
+                <b data-manager="type">设备管理</b>
+            </li>
+            <li>
+                <span>管理面积</span>
+                <b><strong data-manager="area">10000</strong>m²</b>
+            </li>
+            <li>
+                <span>使用人数</span>
+                <b data-manager="person">77</b>
+            </li>
+            <li>
+                <span>项目运用</span>
+                <b data-manager="projectType">单项目</b>
+            </li>
+        </ul>
+        <div class="estimated-price-control">
+            <div class="item">
+                <span>管理面积</span>
+                <div class="range-control manager-area" data-max="500000" data-value="50000">
+                    <button class="add"></button>
+                    <div class="range-control-strip">
+                        <p><span></span></p>
+                        <button class="range-control-btn"></button>
+                        <b class="range-control-txt"><span>0</span>m²</b>
+                    </div>
+                    <button class="reduce"></button>
+                </div>
+            </div>
+            <div class="item">
+                <span>使用人数</span>
+                <div class="range-control manager-person" data-max="2000" data-value="500">
+                    <button class="add"></button>
+                    <div class="range-control-strip">
+                        <p><span></span></p>
+                        <button class="range-control-btn"></button>
+                        <b class="range-control-txt"><span>0</span></b>
+                    </div>
+                    <button class="reduce"></button>
+                </div>
+            </div>
+            <div class="item">
+                <span>项目运用</span>
+                <div class="price-project-type">
+                    <div class="price-project-type-radio">
+                        <input type="radio" name="projectType" value="1" checked>
+                        <label>单项目</label>
+                    </div>
+                    <div class="price-project-type-radio">
+                        <input type="radio" name="projectType" value="0.6" >
+                        <label>多项目</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-base btn-trial app-btn-look">查看报价</button>
+        <ul class="app-show app-look-show">
+            <li>
+                <span>已选模块</span>
+                <b data-manager="type">设备管理</b>
+            </li>
+            <li>
+                <span>管理面积</span>
+                <b><strong data-manager="area">10000</strong>m²</b>
+            </li>
+            <li>
+                <span>使用人数</span>
+                <b data-manager="person">77</b>
+            </li>
+            <li>
+                <span>项目运用</span>
+                <b data-manager="projectType">单项目</b>
+            </li>
+        </ul>
+    </div>
+    <h3 class="app-look-show">您的项目报价区间为</h3>
+    <h2 class="app-look-show">￥<span data-manager="resultMin">7320000</span> — ￥<span data-manager="resultMax">7820000</span> </h2>
+    <div class="app-look-show">
+        <div class="estimated-price-btnbox">
+            <button class="btn-base btn-trial btn-price-sub">立即申请</button>
+            <button class="btn-base btn-trial btn-price-reset">重新选择</button>
+        </div>
+    </div>
+</div>

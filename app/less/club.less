@@ -1,0 +1,57 @@
+.pc-wrapper{
+  margin-bottom: -150px;
+  position: relative;
+  img{
+    width: 100%;
+    display: block;
+  }
+  .btn{
+    position: absolute;
+    bottom: 17vw;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin: 0 auto;
+    width: 11vw;
+    height: 2.3vw;
+    background-image: url("../images/club/btn_apply.png");
+    background-size: cover;
+    background-repeat:no-repeat ;
+    cursor: pointer;
+  }
+}
+.app-wrapper{
+  position: relative;
+  &>img{
+    width: 100%;
+    display: block;
+  }
+  .btn-link{
+    display: block;
+    background: url("../images/club/btn_apply.png") no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+    width: 36vw;
+    height: 8vw;
+    position: absolute;
+    bottom: 6vw;
+    left: calc(50% - 18vw);
+    &.active{
+      position: fixed;
+    }
+  }
+}
+
+
+// pc
+@media screen and (min-width: 1200px){
+  .app-wrapper{
+    display: none;
+  }
+}
+
+// phone
+@media screen and (max-width: 1200px){
+  .pc-wrapper{
+    display: none;
+  }
+}

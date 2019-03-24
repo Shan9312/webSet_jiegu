@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/base-head.html')
+    <script src="scripts/product.js?rev=@@hash"></script>
+</head>
+<body>
+@@include('include/header.html')
+<section class="banner-box-min"></section>
+<section>
+    <div class="container">
+        <div class="product-nav">
+            <a href="product.html?tab=tracker" tab="tracker">任务管理平台</a>
+            <a href="product.html?tab=sentry" tab="sentry">设备资产管理平台</a>
+            <!--<a href="">租户管理平台</a>-->
+            <a href="product.html?tab=seer" tab="seer">3D空间可视化</a>
+        </div>
+    </div>
+</section>
+<section class="product-tracker">
+    <!--<div class="container">
+        <div class="container-title app-product-title">
+            <b>系统功能</b>
+        </div>
+        <div class="case-flex">
+            <img src="images/tracker/img_1.png" class="app-img">
+            <div class="case-mod">
+                <div class="case-title">
+                    <b>系统功能</b>
+                    <span>电子工单管理</span>
+                </div>
+                <ul>
+                    <li><i class="task-icon-0-0"></i><span>创建任务</span></li>
+                    <li><i class="task-icon-1-0"></i><span>发布任务</span></li>
+                    <li><i class="task-icon-2-0"></i><span>前台报事</span></li>
+                    <li><i class="task-icon-3-0"></i><span>分配任务</span></li>
+                    <li><i class="task-icon-4-0"></i><span>验收反馈</span></li>
+                </ul>
+                <h1>功能简述</h1>
+                <p>提交、审批、派工、验收、评价全程在线追踪，完美实现了远程高效地工作分配，现场实时获取相关数据，移动端报表实时管理，使处理情况一手掌握。</p>
+                @@include('include/tracker-about-cese.html')
+            </div>
+            <img src="images/tracker/img_1.png" class="pc-img">
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-title app-product-title">
+            <b>执行任务</b>
+        </div>
+        <div class="case-flex">
+            <img src="images/tracker/img_2.png">
+            <div class="case-mod">
+                <div class="container-title">
+                    <b>执行任务</b>
+                </div>
+                <ul>
+                    <li><i class="task-icon-5-0"></i><span>点位巡视</span></li>
+                    <li><i class="task-icon-0-1"></i><span>GPS记录</span></li>
+                    <li><i class="task-icon-1-1"></i><span>处理报事</span></li>
+                    <li><i class="task-icon-2-1"></i><span>事件记录</span></li>
+                </ul>
+                @@include('include/tracker-about-cese.html')
+            </div>
+        </div>
+    </div>-->
+    <!--<img src="images/tracker/img_7.png" class="waitBanner">-->
+</section>
+<section>
+    <div class="container trial-box free-trial">
+        <button class="btn-base btn-trial btn-trial-show">免费试用</button>
+        @@include('include/form.html')
+        @@include('include/estimated-price.html')
+    </div>
+</section>
+@@include('include/orther-footer.html')
+</body>
+</html>
